@@ -65,7 +65,7 @@ m=-2
 b=-200
 z=m*x
 z=z+b
-for i in range(300):
+for i in range(500):
   if i%10==0:
     print(cost(z))
   m,b=update(m,b,0.000001,0.001)
@@ -76,6 +76,7 @@ print("************************************************")
 print(" ")
 print("Final Model Predicted Line Stats:")
 print("Slope:" , m , " ;Y intercept" , b)
+print(":P")
 
 plt.plot(x,z,color='green')
 plt.scatter(x,y)
